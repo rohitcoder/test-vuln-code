@@ -14,7 +14,7 @@ server.starttls()
 
 try:
     # Log in to the server
-    server.login(smtp_user, smtp_password)
+    server.login(smtp_user, smtp_p)
     print("Logged in successfully")
 
     # You can now send emails using server.sendmail() method
