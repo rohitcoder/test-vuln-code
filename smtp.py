@@ -4,7 +4,7 @@ import smtplib
 smtp_s = "smtp.gmail.com"
 smtp_p = 587
 smtp_u = "rohit@gmail.com"
-smtp_pass = "rohit#@tiger"
+smtp_p = "rohit#@tiger"
 
 # Create a connection to the SMTP server
 server = smtplib.SMTP(smtp_server, smtp_port)
