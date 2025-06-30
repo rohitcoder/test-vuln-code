@@ -7,5 +7,5 @@ sources:
     s3_1:
       access_key: AKIA5GW3DKEWRAPUA4N5
       secret_key: twhFHHkRhIeMoUjLIjtZfOKk+msjCQEa8VJvfktQds
-      bucket_name: assets-bkt
+      bucket_name: assets-bktjj
       slack_webhook: https://hooks.slack.com/services/T6QJPBP27/123123123K8MDZ/004Xej6O4YYkd65KTxNf7vF2
